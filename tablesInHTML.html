@@ -1,0 +1,161 @@
+<html>
+<body>
+	<p> Each table starts with a table tag. <br> 
+		Each table row starts row starts with a tr tag.<br>
+	Each table data starts with a td tag</p>
+
+	<h4> one column </h4>
+	<table border="1">
+		<tr>
+			<td> 1000</td>
+		</tr>
+	</table>
+
+	<h4> one row and three columns </h4>
+	<table border="1">
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+	</table>
+
+	<h4> two rows and three columns </h4>
+	<table border="1">
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+
+	</table>
+
+	<p> if we do not spcify a border attribute then the table will be displayed without border<br>
+	the unit of specifying anything in HTML is in pixels </p>
+
+	<table>
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+	</table>
+
+	<h4>empty cells in a table can be handled quite efficiently</h4>
+	<table border="1">
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			
+		</tr>
+
+	</table>
+
+	<p> in the above case the border of the table cell is missing </p>
+	<h4>to keep the borders of the cell even when cell is empty</h4>
+
+	<table border="1">
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+
+		<tr>
+			<td>1000</td>
+			<td>&nbsp;</td>
+			<td>3000</td>
+
+			
+		</tr>
+
+	</table>
+
+	<p> the above is called a non breaking space which we add to empty data cells </p>
+
+	<h4>adding a table border due to value being large and caption over it</h4>
+
+	<table border="6">
+		<caption>My caption</caption>
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+
+		<tr>
+			<td>1000</td>
+			<td>2000</td>
+			<td>3000</td>
+		</tr>
+
+	</table>
+
+	<h4>Headings in a table </h4>
+
+	<h4>horizontal table headers:</h4>
+	<table border="1" >
+		<tr>
+			<th>Name</th>
+			<th>Telephone</th>
+			
+		</tr>
+		<tr>
+			<td>Jojo</td>
+			<td>4930379402</td>
+
+		</tr>
+	</table>
+
+	<h4>vertical headers : </h4>
+	<table border="1">
+			<tr> 
+				<th>Name</th>
+				<td>jojo</td>
+			</tr>
+			<tr>
+				<th>Telephone</th>
+				<td>585735528</td>
+			</tr>
+	 </table>
+
+	 <h4>cells that span two columns</h4>
+
+	 <table border="1">
+	 	<tr>
+	 		<th>Name</th>
+	 		<th colspan="2">Contact no. </th>
+	 	</tr>
+	 	<tr>
+	 		<td>Disha</td>
+	 		<td>7463839</td>
+	 		<td>93038759385959</td>
+	 	</tr>
+	 </table>
+
+	 <h4>cell that spans two rows :</h4>
+	 <table border="1">
+	 	<tr>
+	 		<th>First Name:</th>
+	 		<td>Disha</td>
+	 	</tr>
+	 	<tr>
+	 		<th rowspan="2">Contact No. </th>
+	 		<td>575883938459</td>
+	 	</tr>
+	 	<tr>
+	 		<td>7483276489</td>
+	 	</tr>
+	 </table>
